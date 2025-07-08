@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Katalog Genset Krisbow A446</title>
   <style>
-    body { font-family: sans-serif; padding: 2rem; background: #f9f9f9; }
-    h1 { color: #333; }
-    .download-button {
-      display: inline-block;
-      margin: 1rem 0;
-      background: #007BFF;
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+    header {
+      background-color: #007BFF;
       color: white;
-      padding: 0.6rem 1.2rem;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+    .btn-download {
+      display: inline-block;
+      background-color: #28a745;
+      color: white;
+      padding: 0.8rem 1.5rem;
       border-radius: 5px;
       text-decoration: none;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
     }
-    .download-button:hover {
-      background: #0056b3;
+    .btn-download:hover {
+      background-color: #218838;
     }
-    iframe {
+    .pdf-viewer {
       width: 100%;
       height: 80vh;
-      border: 1px solid #ccc;
+      border: none;
+      max-width: 100%;
+    }
+    .fallback {
       margin-top: 1rem;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
-  <h1>Katalog Genset Krisbow A446</h1>
-  <a class="download-button" href="KATALOG%20GENSET%20Krisbow.pdf" download>📥 Download Katalog PDF</a>
-  <iframe src="https://docs.google.com/gview?url=https://arielcombet.github.io/katalog-genset-krisbow/KATALOG%20GENSET%20Krisbow.pdf&embedded=true"></iframe>
+
+  <header>
+    <h1>Katalog Genset Krisbow A446</h1>
+  </header>
+
+  <main>
+    <a href="https://drive.google.com/file/d/15kWlXY9j70CHSyPtkGjORXyErQ-6jTHD/view" target="_blank" class="btn-download">📥 Download Katalog PDF</a>
+
+    <iframe class="pdf-viewer"
+      src="https://drive.google.com/file/d/15kWlXY9j70CHSyPtkGjORXyErQ-6jTHD/preview">
+    </iframe>
+
+    <div class="fallback">
+      Jika tampilan tidak muncul, Anda bisa <a href="https://drive.google.com/file/d/15kWlXY9j70CHSyPtkGjORXyErQ-6jTHD/view" target="_blank">klik di sini untuk membuka langsung</a>.
+    </div>
+  </main>
+
 </body>
 </html>
